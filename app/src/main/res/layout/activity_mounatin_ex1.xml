@@ -12,16 +12,14 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        >
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:padding="6.5dp">
+            android:padding="7dp"
+            android:orientation="vertical">
 
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/ex1"
@@ -29,9 +27,7 @@
                 android:layout_height="250dp"
                 android:layout_marginTop="56dp"
                 android:src="@drawable/exersice_1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                />
 
             <Button
                 android:id="@+id/Time"
@@ -40,11 +36,10 @@
                 android:layout_marginTop="56dp"
                 android:background="@drawable/time_bg"
                 android:text="01:00"
+                android:layout_gravity="center"
                 android:textSize="40sp"
                 app:backgroundTint="@null"
-                app:layout_constraintEnd_toEndOf="@+id/ex1"
-                app:layout_constraintStart_toStartOf="@+id/ex1"
-                app:layout_constraintTop_toBottomOf="@+id/ex1" />
+                />
 
             <Button
                 android:id="@+id/button2"
@@ -57,34 +52,47 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:backgroundTint="@null"
-                app:layout_constraintEnd_toEndOf="@+id/Time"
-                app:layout_constraintStart_toStartOf="@+id/Time"
-                app:layout_constraintTop_toBottomOf="@+id/Time" />
-
-            <Button
-                android:id="@+id/youtube_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:onClick="openYouTubeVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ')"
-                android:text="Play YouTube video"
-                app:layout_constraintEnd_toEndOf="@+id/button2"
-                app:layout_constraintStart_toStartOf="@+id/button2"
-                app:layout_constraintTop_toBottomOf="parent"
-                tools:ignore="OnClick" />
+                android:layout_gravity="center"
+                />
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="35dp"
                 android:text="How to Do that:"
-                android:textStyle="bold"
                 android:textColor="@color/black"
+                android:layout_gravity="center"
                 android:textSize="22.5sp"
-                app:layout_constraintEnd_toEndOf="@+id/button2"
-                app:layout_constraintStart_toStartOf="@+id/button2"
-                app:layout_constraintTop_toBottomOf="@+id/button2" />
+                android:textStyle="bold"
+                />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:text="@string/pose1"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:onClick="mountainClimber"
+                android:layout_width="128dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/start_cartoon_background_design"
+                android:text="VIDEO"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:backgroundTint="#FA0202"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

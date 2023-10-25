@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ex1_prossingSystem extends AppCompatActivity {
+public class ex1_prossingSystem2 extends AppCompatActivity {
 
     String buttonvalue;
     Button startButton;
@@ -92,7 +92,7 @@ public class ex1_prossingSystem extends AppCompatActivity {
 
                 }
                 else {
-                        startTimer();
+                    startTimer();
                 }
             }
         });
@@ -131,13 +131,13 @@ public class ex1_prossingSystem extends AppCompatActivity {
 
                 int newvalue = Integer.valueOf(buttonvalue) + 1;
                 if (newvalue < 7) {
-                    Intent intent = new Intent(ex1_prossingSystem.this, ex1_prossingSystem.class);
+                    Intent intent = new Intent(ex1_prossingSystem2.this, ex1_prossingSystem2.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value", String.valueOf(newvalue));
                     startActivity(intent);
                 } else {
                     newvalue = 1;
-                    Intent intent = new Intent(ex1_prossingSystem.this, ex1_prossingSystem.class);
+                    Intent intent = new Intent(ex1_prossingSystem2.this, ex1_prossingSystem2.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value", String.valueOf(newvalue));
                     startActivity(intent);
@@ -149,17 +149,17 @@ public class ex1_prossingSystem extends AppCompatActivity {
         startButton.setText("Pause");
         MTimeRunning = true;
     }
-        private void updateTimer() {
-            int minutes = (int) MTimeLeft / 60000;
-            int seconds = (int) MTimeLeft % 60000 / 1000;
-            String timeLeftText = "";
-            if (minutes < 10)
-                timeLeftText ="0";
-            timeLeftText = timeLeftText + minutes + ":";
-            if (seconds < 10)
-                timeLeftText+="0";
-            timeLeftText += seconds;
-            mtextview.setText(timeLeftText);
+    private void updateTimer() {
+        int minutes = (int) MTimeLeft / 60000;
+        int seconds = (int) MTimeLeft % 60000 / 1000;
+        String timeLeftText = "";
+        if (minutes < 10)
+            timeLeftText ="0";
+        timeLeftText = timeLeftText + minutes + ":";
+        if (seconds < 10)
+            timeLeftText+="0";
+        timeLeftText += seconds;
+        mtextview.setText(timeLeftText);
 
 
     }

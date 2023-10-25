@@ -26,7 +26,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="56dp"
-                android:src="@drawable/exersice_4"
+                android:src="@drawable/exersice_12"
                 />
 
             <Button
@@ -72,13 +72,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
-                android:text="@string/pose4"
+                android:text="@string/pose12"
                 android:textSize="18sp"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 />
             <Button
-                android:onClick="Bicycle"
+                android:onClick="RussianTwist"
                 android:layout_width="128dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="32dp"

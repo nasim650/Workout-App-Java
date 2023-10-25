@@ -13,6 +13,9 @@
         android:theme="@style/Theme.NasimTest"
         tools:targetApi="31">
         <activity
+            android:name=".ex1_prossingSystem2"
+            android:exported="false" />
+        <activity
             android:name=".ex1_prossingSystem"
             android:exported="false" />
         <activity

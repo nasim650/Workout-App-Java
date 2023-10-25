@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".over18work"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    >
+
     <ScrollView
         android:id="@+id/under18ScrollView"
         android:layout_width="match_parent"
@@ -20,7 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Mounatin_ex1"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -32,15 +37,16 @@
                     android:orientation="vertical"
                     android:layout_weight="1"
                     >
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MOUNTAIN CLIMBER"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
                         android:padding="4.5dp"
-                        />
+                        android:text="MOUNTAIN CLIMBER"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -94,6 +100,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Basic_CR_ex2"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -167,6 +175,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Bench_ex3"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -240,6 +250,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Bicycle_ex4"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -313,6 +325,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Leg_Raise_ex5"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -386,6 +400,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Hell_Touch_ex6"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -459,6 +475,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Leg_Up_ex7"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -532,6 +550,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Sit_Up_ex8"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -605,6 +625,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/V_Ups_ex9"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -678,6 +700,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Plank_Rotation_ex10"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -751,6 +775,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Plank_Leg_ex11"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -824,6 +850,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Russina_Twist_ex12"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -897,6 +925,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Bridge_ex13"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -970,6 +1000,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Vertica_Leg_ex14"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -985,7 +1017,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="VERTICA LEG CRUNCHES"
-                        android:textSize="22sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
                         android:padding="4.5dp"
@@ -1043,6 +1075,8 @@
                 android:background="@color/black"
                 />
             <LinearLayout
+                android:onClick="Under18ImageClick"
+                android:id="@+id/Wind_Mill_ex15"
                 android:layout_width="fill_parent"
                 android:layout_height="115dp"
                 android:orientation="horizontal"
@@ -1117,5 +1151,4 @@
                 />
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

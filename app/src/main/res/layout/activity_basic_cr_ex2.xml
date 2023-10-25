@@ -1,6 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="7dp"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/ex1"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/exersice_2"
+                />
+
+            <Button
+                android:id="@+id/Time"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/time_bg"
+                android:text="01:00"
+                android:layout_gravity="center"
+                android:textSize="40sp"
+                app:backgroundTint="@null"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="128dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/start_cartoon_background_design"
+                android:text="START"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:text="How to Do that:"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="22.5sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:text="@string/pose2"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:onClick="BasicCrunches"
+                android:layout_width="128dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/start_cartoon_background_design"
+                android:text="VIDEO"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:backgroundTint="#FA0202"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
