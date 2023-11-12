@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ex1_prossingSystem extends AppCompatActivity {
 
-    String buttonvalue;
+    String buttonValue;
     Button startButton;
     private CountDownTimer countDownTimer;
     TextView mtextview;
@@ -24,10 +24,10 @@ public class ex1_prossingSystem extends AppCompatActivity {
         setContentView(R.layout.activity_ex1_prossing_system);
 
         Intent intent= getIntent();
-        buttonvalue =intent.getStringExtra("value");
-        int intvalue=Integer.parseInt(buttonvalue);
+        buttonValue =intent.getStringExtra("value");
+        int intValue =Integer.parseInt(buttonValue);
 
-        switch (intvalue){
+        switch (intValue){
 
             case 1:
                 setContentView(R.layout.activity_mounatin_ex1);
@@ -88,7 +88,7 @@ public class ex1_prossingSystem extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (MTimeRunning) {
-                    stoptimer();
+                    stopTimer();
 
                 }
                 else {
@@ -100,7 +100,7 @@ public class ex1_prossingSystem extends AppCompatActivity {
 
     }
 
-    private void stoptimer(){
+    private void stopTimer(){
         countDownTimer.cancel();
         MTimeRunning=false;
         startButton.setText("START");
@@ -129,7 +129,7 @@ public class ex1_prossingSystem extends AppCompatActivity {
             @Override
             public void onFinish() {
 
-                int newvalue = Integer.valueOf(buttonvalue) + 1;
+                int newvalue = Integer.valueOf(buttonValue) + 1;
                 if (newvalue < 7) {
                     Intent intent = new Intent(ex1_prossingSystem.this, ex1_prossingSystem.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
