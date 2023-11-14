@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food_tips"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+        <TextView
+            android:id="@+id/foodTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="24dp"
+            android:text="**Food Tips for Home Workouts**\n\n**Pre-Workout:**\n* Aim to eat a balanced meal or snack 1-2 hours before your workout to provide sustained energy.\n* Choose complex carbohydrates like whole grains, fruits, and vegetables for immediate energy release.\n* Include protein sources like lean meats, fish, eggs, or dairy to aid muscle repair and growth.\n* Stay hydrated by drinking plenty of water throughout the day, especially before your workout.\n\n**During-Workout:**\n* For shorter workouts (under 60 minutes), consider drinking a sports drink or eating a small carbohydrate-rich snack, such as a banana or energy bar, to maintain energy levels.\n* For longer workouts (over 60 minutes), consume carbohydrate gels or electrolyte drinks to replenish glycogen stores and prevent electrolyte imbalance.\n\n**Post-Workout:**\n* Replenish your body with a combination of carbohydrates and protein within 30-60 minutes of your workout to promote muscle recovery and glycogen synthesis.\n* Choose protein-rich foods like lean meats, fish, eggs, or dairy to repair and rebuild muscle tissue.\n* Opt for complex carbohydrates like whole grains, fruits, and vegetables to restore energy stores.\n* Stay hydrated by continuing to drink plenty of water after your workout to aid in recovery and overall health.\n\n**Additional Tips:**\n* Listen to your body and adjust your food intake accordingly.\n* Avoid heavy meals or high-fat foods before your workout, as they can cause digestive problems.\n* Experiment with different foods to find what works best for you and your workout routine.\n* Consult a registered dietitian or nutritionist for personalized advice on fueling your workouts."
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ScrollView>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

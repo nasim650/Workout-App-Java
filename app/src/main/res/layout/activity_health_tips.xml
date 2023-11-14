@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".health_tips"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+
+            <TextView
+                android:id="@+id/foodTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="24dp"
+                android:text="**Health Tips for Home Workouts**\n\n**Warm-up and Cool-down:**\n* Always warm up before your workout to prepare your muscles and prevent injuries.\n* Start with 5-10 minutes of light cardio, such as walking or jogging, followed by dynamic stretches.\n* Cool down after your workout with 5-10 minutes of static stretches to improve flexibility and reduce muscle soreness.\n\n**Listen to Your Body:**\n* Pay attention to your body's signals and don't push yourself too hard, especially if you're new to exercise.\n* If you experience pain, stop the activity and rest.\n* Gradually increase the intensity and duration of your workouts as your fitness level improves.\n\n**Rest and Recovery:**\n* Allow your body adequate time to rest and recover between workouts.\n* Aim for 7-8 hours of sleep each night to promote muscle repair and overall health.\n* Engage in active recovery activities, such as yoga or foam rolling, to improve flexibility and reduce muscle soreness.\n\n**Maintain a Healthy Diet:**\n* Eat a balanced diet that includes plenty of fruits, vegetables, whole grains, and lean protein.\n* Avoid processed foods, sugary drinks, and excessive amounts of saturated and unhealthy fats.\n* Stay hydrated by drinking plenty of water throughout the day.\n\n**Seek Professional Guidance:**\n* Consult a doctor or certified personal trainer before starting a new exercise program, especially if you have any underlying health conditions.\n* Seek guidance from a registered dietitian or nutritionist to create a personalized meal plan that supports your fitness goals.\n\n**Additional Tips:**\n* Find an activity you enjoy to make exercise a sustainable part of your lifestyle.\n* Set realistic goals and track your progress to stay motivated.\n* Join a fitness class or find a workout buddy to stay accountable and add a social element to your exercise routine."
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </ScrollView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

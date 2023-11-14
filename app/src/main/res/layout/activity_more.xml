@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".more">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+
+            <TextView
+                android:id="@+id/foodTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="24dp"
+                android:text="**Additional Tips for Home Workouts**\n\n**Consistency is Key:**\n* Aim to exercise regularly, even if it's just for 20-30 minutes most days of the week.\n* Consistency is more important than intensity when it comes to achieving your fitness goals.\n* Find a workout schedule that fits into your lifestyle and stick with it.\n\n**Vary Your Workouts:**\n* Incorporate a variety of exercises into your routine to target different muscle groups and prevent boredom.\n* Try different types of workouts, such as strength training, cardio, and flexibility exercises.\n* Keep your workouts challenging and engaging to maintain motivation.\n\n**Set Realistic Goals:**\n* Set SMART goals (Specific, Measurable, Achievable, Relevant, and Time-bound) to track your progress and stay motivated.\n* Start with small, achievable goals and gradually increase the difficulty as you get stronger.\n* Celebrate your accomplishments along the way to stay motivated.\n\n**Make Exercise Fun:**\n* Find activities you enjoy to make exercise a sustainable part of your lifestyle.\n* Listen to music, watch a movie, or listen to a podcast while you work out to make it more enjoyable.\n* Find a workout buddy or join a fitness class to add a social element to your exercise routine.\n\n**Seek Support:**\n* Don't be afraid to ask for help from a certified personal trainer or fitness instructor.\n* Join an online fitness community for support and motivation.\n* Share your fitness goals with friends and family for encouragement.\n\n**Additional Tips:**\n* Start slowly and gradually increase the intensity and duration of your workouts.\n* Find a workout routine that is appropriate for your fitness level and any underlying health conditions.\n* Use proper form to prevent injuries and maximize the effectiveness of your workouts.\n* Warm up before your workout and cool down afterward.\n* Stay hydrated by drinking plenty of water throughout the day."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </ScrollView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rest_schudule"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+
+            <TextView
+                android:id="@+id/foodTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="24dp"
+                android:text="**Rest Tips for Home Workouts**\n\n**Importance of Sleep:**\n• Sleep is essential for muscle repair and growth, as well as overall physical and mental health.\n• Aim for 7-8 hours of sleep each night to optimize your recovery and performance.\n• Establish a regular sleep schedule and stick to it as much as possible, even on weekends.\n• Create a relaxing bedtime routine to help you wind down and fall asleep more easily.\n• Make sure your bedroom is dark, quiet, and cool to promote restful sleep.\n\n**Stretching:**\n• Stretching is an important part of rest and recovery, as it helps to improve flexibility and reduce muscle soreness.\n• Spend 5-10 minutes stretching after each workout, focusing on the muscles that you worked the hardest.\n• Hold each stretch for 15-30 seconds, breathing deeply and evenly.\n• Incorporate dynamic stretches into your warm-up routine to prepare your muscles for activity.\n• Include static stretches in your cool-down routine to help your muscles relax and recover.\n\n**Active Recovery:**\n• Active recovery involves engaging in light physical activity to promote blood flow and reduce inflammation.\n• Activities such as walking, swimming, or yoga can help to speed up your recovery and reduce muscle soreness.\n• Aim for 30-45 minutes of active recovery every 2-3 days.\n• Listen to your body and adjust your activity level accordingly.\n\n**Nutrition:**\n• Eating a healthy diet is essential for muscle repair and growth, as well as overall physical and mental health.\n• Make sure to eat plenty of fruits, vegetables, and whole grains.\n• Include lean protein sources in your diet, such as fish, chicken, or beans.\n• Avoid processed foods, sugary drinks, and excessive amounts of saturated and unhealthy fats.\n• Stay hydrated by drinking plenty of water throughout the day.\n\n**Additional Tips:**\n• Manage stress levels, as stress can interfere with sleep and recovery.\n• Avoid caffeine and alcohol before bed, as these substances can disrupt sleep.\n• Create a relaxing environment in your home to promote rest and relaxation.\n"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </ScrollView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

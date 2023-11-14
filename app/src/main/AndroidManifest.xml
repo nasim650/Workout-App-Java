@@ -13,6 +13,18 @@
         android:theme="@style/Theme.NasimTest"
         tools:targetApi="31">
         <activity
+            android:name=".more"
+            android:exported="false" />
+        <activity
+            android:name=".rest_schudule"
+            android:exported="false" />
+        <activity
+            android:name=".Food_tips"
+            android:exported="false" />
+        <activity
+            android:name=".health_tips"
+            android:exported="false" />
+        <activity
             android:name=".ex1_prossingSystem2"
             android:exported="false" />
         <activity
